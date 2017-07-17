@@ -2,11 +2,11 @@
   -Margin around whole webside
   -Wie kann ich Bildproportionen verändern, ohne es zu verzerren?
 
+  ---*/
 
 *{
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
----*/
 
 
 *html{
@@ -78,7 +78,7 @@ header ul{
 header{
   background:#ffffff;
   color: #cccccc;
-  padding-top:150px;
+  padding-top:50px;
   border-bottom:#cccccc 1px solid;
 }
 
@@ -127,23 +127,33 @@ header .current a{
   margin:10px 0 20px 0;
 }
 
+
+
+#topic-preview .topic_box{
+  float: right;
+  background-color: #ffffff;
+  display: inline;
+  margin: 0 auto;
+  max-width: 50%;
+  max-height: auto;
+}
+
+
 #topic-preview .box{
   float: left;
-  background-color: #cccccc;
-  text-align: left;
   display: inline;
-  margin: 0px auto;
-  width: 1400px;
+  margin: 0 auto;
+  width: 50%;
 }
 
 #topic-preview .box img{
-  display:block;
+  display:inline;
   float:left;
   margin: 0px auto;
-  max-width:700px;
-  max-height:450px;
-}
+  max-width: 100%;
+  max-height: auto;
 
+}
 
 
 /*work-preview*/
