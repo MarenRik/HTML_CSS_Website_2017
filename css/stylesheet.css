@@ -17,7 +17,6 @@
   padding: 0;
   height: 100%;
   width: 100%;
-
 }
 
 *body{
@@ -29,6 +28,9 @@
   height: 100%;
   width: 100%;
 }
+
+
+
 
 
 /*Global*/
@@ -43,6 +45,9 @@ header ul{
   margin:0;
   padding:0;
 }
+
+
+
 
 
 /*Cover*/
@@ -80,6 +85,10 @@ header ul{
   display: block;
   margin: auto;
 }
+
+
+
+
 
 /*Header*/
 header{
@@ -136,8 +145,6 @@ header .current a{
   text-align: center;
 }
 
-
-
 .topic{
   float: right;
   background-color:#cccccc;
@@ -150,7 +157,7 @@ header .current a{
   max-height: auto;
   float: right;
   text-align: center;
-  padding: 0px 60px 100px 60px;
+  padding: 0px 150px 100px 150px;
 }
 
 #topic-preview h1 {
@@ -180,9 +187,21 @@ header .current a{
 }
 
 
+
+
+
 /*work-preview*/
 #work-preview{
   margin:15px 0 150px 0;
+}
+
+#work-preview p{
+  margin-top: 0px;
+}
+
+#work-preview h3{
+  margin-bottom: 0;
+  margin-top: 5px;
 }
 
 .box{
