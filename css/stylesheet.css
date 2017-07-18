@@ -2,11 +2,11 @@
   -Margin around whole webside
   -Wie kann ich Bildproportionen verändern, ohne es zu verzerren?
 
-  ---*/
 
 *{
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
+---*/
 
 *{
   box-sizing: border-box;
@@ -221,6 +221,54 @@ header .current a{
   max-height:270px;
 }
 
+
+
+/*---box_contact--*/
+
+#topic-preview-about{
+  margin:20px 0 20px 0;
+  background-color: #cccccc;
+  text-align: center;
+}
+
+#topic-preview-about h1 {
+  display: inline-block;
+  max-width: 50%;
+  max-height: auto;
+  text-align: center;
+  padding: 130px 10px 30px 10px;
+  margin:0 auto;
+}
+
+.box_contact{
+  float: right;
+  display: inline;
+  color: #999;
+  text-align: center;
+  width: 16.3%;
+  max-height: auto;
+}
+
+#topic-preview-about h3{
+  margin-bottom: 0px;
+}
+
+#topic-preview-about p{
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+
+/*--- wie kann ich Bildproportionen verändern, ohne es zu verzerren?--*/
+.box_contact img{
+  display:block;
+  margin: 0px auto;
+  max-width:100px;
+  max-height:50px;
+
+}
 
 
 
