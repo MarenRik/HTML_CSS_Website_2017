@@ -3,11 +3,12 @@
   -Wie kann ich Bildproportionen verändern, ohne es zu verzerren?
 
 
+  ---*/
 *{
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
----*/
 
+/*Global*/
 *{
   box-sizing: border-box;
 }
@@ -28,12 +29,6 @@
   height: 100%;
   width: 100%;
 }
-
-
-
-
-
-/*Global*/
 
 .container{
   width:100%;
@@ -154,7 +149,7 @@ header .current a{
   max-height: auto;
   float: right;
   text-align: left;
-  padding: 0px 150px 100px 150px;
+  padding: 0px 150px 0px 150px;
 }
 
 #topic-preview h1 {
@@ -213,8 +208,10 @@ header .current a{
 .box img{
   display:block;
   margin: 0px auto;
-  max-width:430px;
-  max-height:270px;
+  max-width:100%;
+  max-height:auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -273,14 +270,182 @@ footer{
 
 
 
-/*----------------responsivness----------------------------------------------
-@media screen{
-
-
-  #work-preview .box{
-    text-align: center;
-    width:30%;
-    padding: 10px;
+/*----------------responsivness--------------------------------------------*/
+@media screen and (max-width: 700px){
+  header{
+    background:#ffffff;
+    color: #cccccc;
+    padding-top:30px;
+    border-bottom:#cccccc 1px solid;
   }
+
+  header #branding{
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  header #branding h1{
+    margin: 0 auto;
+    padding:0 20px 0px 20px;
+    color: #999999
+  }
+
+  header a{
+    color:#cccccc;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:16px;
+  }
+
+  header li{
+    display:inline-block;
+    padding:0 20px 0 20px;
+    width: 33%;
+
+  }
+
+  header nav{
+    float:left;
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  header .current a{
+    font-weight:bold;
+    color:#999999;
+  }
+
+  /*topic-preview*/
+  #topic-preview{
+    background-color: #ffffff;
+  }
+
+  .topic{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #topic-preview h1{
+    display: inline-block;
+    text-align: left;
+    padding: 20px 10px 0 10px;
+  }
+
+  #topic-preview p {
+    max-width: 100%;
+    max-height: auto;
+    float: right;
+    text-align: left;
+    padding: 0px 10px 0px 10px;
+  }
+
+
+  .photo{
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+  }
+
+  .photo img{
+    margin: 0px auto;
+    max-width:cover;
+    max-height: auto;
+  }
+
+
+
+
+
+  /*work-preview*/
+  #work-preview{
+    margin:15px 0 80px 0;
+  }
+
+  #work-preview p{
+    margin-top: 0px;
+  }
+
+  #work-preview h3{
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .box{
+    float: left;
+    color: #999;
+    text-align: center;
+    display: inline;
+    margin:auto;
+    width: 33%;
+  }
+
+  .box img{
+    display:block;
+    margin: 0px auto;
+    max-width:100%;
+    max-height:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+
+  /*-----------------------------------contact----------------------------------*/
+
+  #topic-preview-contact{
+    margin:20px 0 20px 0;
+    background-color: #cccccc;
+    text-align: left;
+  }
+
+  .box_contact{
+    float: right;
+    display: inline;
+    color: #999;
+    text-align: center;
+    width: 16.3%;
+    max-height: auto;
+    margin-top: 180px;
+  }
+
+
+  #topic-preview-contact p{
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #topic-preview-contact h3{
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+
+  .box_contact img{
+    display:block;
+    margin: 0px auto;
+    max-width:100px;
+    max-height:50px;
+
+  }
+
+
+
+  /*-----------------------footer-----------------------------------------------*/
+  footer{
+    padding:20px;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #cccccc;
+    text-align: center;
+  }
+
+
+
 
 }
