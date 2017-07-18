@@ -121,18 +121,15 @@ header #branding h1{
   color: #999999
 }
 
-
 header nav{
   float:left;
   margin-top: 10px;
 }
 
-
 header .current a{
   font-weight:bold;
   color:#999999;
 }
-
 
 
 
@@ -213,7 +210,6 @@ header .current a{
   width: 33%;
 }
 
-/*--- wie kann ich Bildproportionen verändern, ohne es zu verzerren?--*/
 .box img{
   display:block;
   margin: 0px auto;
@@ -223,21 +219,12 @@ header .current a{
 
 
 
-/*---box_contact--*/
+/*-----------------------------------contact----------------------------------*/
 
-#topic-preview-about{
+#topic-preview-contact{
   margin:20px 0 20px 0;
   background-color: #cccccc;
   text-align: left;
-}
-
-#topic-preview-about h1 {
-  display: inline-block;
-  max-width: 50%;
-  max-height: auto;
-  text-align: center;
-  padding: 130px 10px 30px 80px;
-  margin:0 auto;
 }
 
 .box_contact{
@@ -247,21 +234,23 @@ header .current a{
   text-align: center;
   width: 16.3%;
   max-height: auto;
+  margin-top: 180px;
 }
 
-#topic-preview-about h3{
-  margin-bottom: 0px;
-}
 
-#topic-preview-about p{
+#topic-preview-contact p{
   margin-top: 0px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
+#topic-preview-contact h3{
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
 
-/*--- wie kann ich Bildproportionen verändern, ohne es zu verzerren?--*/
 .box_contact img{
   display:block;
   margin: 0px auto;
@@ -272,16 +261,19 @@ header .current a{
 
 
 
-/*footer*/
+/*-----------------------footer-----------------------------------------------*/
 footer{
   padding:20px;
   margin-top: 10px;
   color: #ffffff;
   background-color: #cccccc;
   text-align: center;
-
 }
-/*
+
+
+
+
+/*----------------responsivness----------------------------------------------
 @media screen{
 
 
