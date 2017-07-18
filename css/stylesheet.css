@@ -1,13 +1,13 @@
 /*---General  Questions
   -Margin around whole webside
   -Wie kann ich Bildproportionen verändern, ohne es zu verzerren?
-
+  -Bei responsive design zwischen den media queries für ein paar pixel auf grundlayout?
 
 *{
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
----*/
 
+---*/
 /*Global*/
 *{
   box-sizing: border-box;
@@ -150,6 +150,7 @@ header .current a{
   float: right;
   text-align: left;
   padding: 0px 150px 0px 150px;
+  margin-top: 2px;
 }
 
 #topic-preview h1 {
@@ -227,7 +228,7 @@ header .current a{
 .box_contact{
   float: right;
   display: inline;
-  color: #999;
+  color: #000;
   text-align: center;
   width: 16.3%;
   max-height: auto;
@@ -253,9 +254,23 @@ header .current a{
   margin: 0px auto;
   max-width:100px;
   max-height:50px;
-
 }
 
+.photo_contact{
+  float: left;
+  background-color: #ffffff;
+  display: inline;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.photo_contact img{
+  display:inline;
+  float: left;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height:auto;
+}
 
 
 /*-----------------------footer-----------------------------------------------*/
@@ -271,7 +286,7 @@ footer{
 
 
 /*----------------responsivness--------------------------------------------*/
-@media screen and (max-width: 700px){
+@media screen and (max-width: 710px){
   header{
     background:#ffffff;
     color: #cccccc;
@@ -311,6 +326,7 @@ footer{
     padding-top: 30px;
     margin: 0 auto;
     width: 100%;
+    text-align: center;
   }
 
   header .current a{
@@ -340,6 +356,7 @@ footer{
     float: right;
     text-align: left;
     padding: 0 10px 0 10px;
+    margin-top: 5px;
   }
 
 
@@ -366,7 +383,7 @@ footer{
   }
 
   #work-preview p{
-    margin-top: 3px;
+    margin-top: 0;
     padding: 0 30px 0 30px;
   }
 
@@ -387,7 +404,7 @@ footer{
 
   .box img{
     display:block;
-    margin: 0px auto;
+    margin: 7px auto 0 auto;
     max-width:100%;
     max-height:auto;
     padding:0 30px 0 30px;
@@ -406,7 +423,7 @@ footer{
   .box_contact{
     float: right;
     display: inline;
-    color: #999;
+    color: #000;
     text-align: center;
     width: 100%;
     max-height: auto;
@@ -438,19 +455,249 @@ footer{
     max-height:50px;
 
   }
+}
+
+@media screen and (min-width: 690px) and (max-width: 900px){
 
 
+  #topic-preview p {
+    display: inline;
+    max-width: 50%;
+    max-height: auto;
+    float: right;
+    text-align: left;
+    padding: 0px 25px 0px 25px;
+    margin-top: 2px;
+  }
 
-  /*-----------------------footer-----------------------------------------------*/
-  footer{
-    padding:20px;
-    margin-top: 10px;
-    color: #ffffff;
-    background-color: #cccccc;
+  #topic-preview h1 {
+    display: inline-block;
+    max-width: 50%;
+    max-height: auto;
     text-align: center;
+    padding: 45px 25px 0 25px;
+    margin:0 auto;
+  }
+
+
+  .photo{
+    float: left;
+    background-color: #ffffff;
+    display: inline;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .photo img{
+    display:inline;
+    float:left;
+    margin: 0px auto;
+    max-width: 100%;
+    max-height: auto;
   }
 
 
 
+
+
+  /*work-preview*/
+  #work-preview{
+    margin:15px 0 100px 0;
+  }
+
+  #work-preview p{
+    margin-top: 0px;
+    padding: 0 20px 0 20px;
+  }
+
+  #work-preview h3{
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .box{
+    float: left;
+    color: #999;
+    text-align: center;
+    display: inline;
+    margin:auto;
+    width: 33%;
+  }
+
+  .box img{
+    display:block;
+    margin: 0px auto;
+    max-width:100%;
+    max-height:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+
+  /*-----------------------------------contact----------------------------------*/
+
+
+  .box_contact{
+    float: right;
+    display: inline;
+    color: #000;
+    text-align: center;
+    width: 16.3%;
+    max-height: auto;
+    margin-top: 45px;
+  }
+
+
+  #topic-preview-contact p{
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #topic-preview-contact h3{
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .photo_contact{
+    float: left;
+    background-color: #ffffff;
+    display: inline;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .photo_contact img{
+    display:inline;
+    float: left;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height:auto;
+  }
+
+}
+
+@media screen and (min-width: 890px) and (max-width: 1150px){
+
+
+
+  #topic-preview p {
+    display: inline;
+    max-width: 50%;
+    max-height: auto;
+    float: right;
+    text-align: left;
+    padding: 0px 65px 0px 65px;
+    margin-top: 2px;
+  }
+
+  #topic-preview h1 {
+    display: inline-block;
+    max-width: 50%;
+    max-height: auto;
+    text-align: center;
+    padding: 80px 65px 0 65px;
+    margin:0 auto;
+  }
+
+
+  .photo{
+    float: left;
+    background-color: #ffffff;
+    display: inline;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .photo img{
+    display:inline;
+    float:left;
+    margin: 0px auto;
+    max-width: 100%;
+    max-height: auto;
+  }
+
+
+
+
+
+  /*work-preview*/
+  #work-preview{
+    margin:15px 0 100px 0;
+  }
+
+  #work-preview p{
+    margin-top: 0px;
+    padding: 0 20px 0 20px;
+  }
+
+  #work-preview h3{
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .box{
+    float: left;
+    color: #999;
+    text-align: center;
+    display: inline;
+    margin:auto;
+    width: 33%;
+  }
+
+  .box img{
+    display:block;
+    margin: 0px auto;
+    max-width:100%;
+    max-height:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+
+  /*-----------------------------------contact----------------------------------*/
+
+
+  .box_contact{
+    float: right;
+    display: inline;
+    color: #000;
+    text-align: center;
+    width: 16.3%;
+    max-height: auto;
+    margin-top: 80px;
+  }
+
+
+  #topic-preview-contact p{
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #topic-preview-contact h3{
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .photo_contact{
+    float: left;
+    background-color: #ffffff;
+    display: inline;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .photo_contact img{
+    display:inline;
+    float: left;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height:auto;
+  }
 
 }
