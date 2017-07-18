@@ -142,7 +142,7 @@ header .current a{
 #topic-preview{
   margin:20px 0 20px 0;
   background-color: #cccccc;
-  text-align: center;
+  text-align: left;
 }
 
 .topic{
@@ -156,7 +156,7 @@ header .current a{
   max-width: 50%;
   max-height: auto;
   float: right;
-  text-align: center;
+  text-align: left;
   padding: 0px 150px 100px 150px;
 }
 
@@ -165,7 +165,7 @@ header .current a{
   max-width: 50%;
   max-height: auto;
   text-align: center;
-  padding: 150px 10px 0 10px;
+  padding: 150px 10px 0 150px;
   margin:0 auto;
 }
 
@@ -228,7 +228,7 @@ header .current a{
 #topic-preview-about{
   margin:20px 0 20px 0;
   background-color: #cccccc;
-  text-align: center;
+  text-align: left;
 }
 
 #topic-preview-about h1 {
@@ -236,7 +236,7 @@ header .current a{
   max-width: 50%;
   max-height: auto;
   text-align: center;
-  padding: 130px 10px 30px 10px;
+  padding: 130px 10px 30px 80px;
   margin:0 auto;
 }
 
