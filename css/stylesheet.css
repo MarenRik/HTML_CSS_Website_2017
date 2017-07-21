@@ -21,13 +21,16 @@
 }
 
 *body{
-  font-family:"Josefin Sans", Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
   padding: 0;
   margin: 0;
   height: 100%;
   width: 100%;
+}
+
+body{
+  font-family: 'Rokkitt', serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .container{
@@ -44,49 +47,9 @@ header ul{
 
 
 
-
-/*Cover*/
-#cover{
-  height: 600px;
-  width:100%;
-  background: url("../images/Header.jpg") no-repeat;
-  background-size: 100%;
-  text-align:center;
-  color: #ffffff;
-}
-
-#cover h1{
-  margin-bottom:10px;
-  margin-top:300px;
-  font-size: 25px;
-}
-
-#cover p{
-  font-size: 20px;
-  width: 500px;
-  margin:auto;
-  display: inline;
-}
-
-#cover a{
-  width: 140px;
-  color:#ffffff;
-  text-decoration:none;
-  text-transform:uppercase;
-  font-size:16px;
-  border: 1px solid #ffffff;
-  border-radius: 3px;
-  padding:5px;
-  display: block;
-  margin: auto;
-}
-
-
-
-
-
 /*Header*/
 header{
+  font-family: 'Questrial', sans-serif;
   background:#ffffff;
   color: #cccccc;
   padding-top:50px;
@@ -113,7 +76,7 @@ header #branding{
 header #branding h1{
   margin:0;
   padding:0 20px 0 20px;
-  color: #999999
+  color: #5F5F5F;
 }
 
 header nav{
@@ -123,7 +86,7 @@ header nav{
 
 header .current a{
   font-weight:bold;
-  color:#999999;
+  color:#5F5F5F;;
 }
 
 
@@ -133,8 +96,9 @@ header .current a{
 /*topic-preview*/
 #topic-preview{
   margin:20px 0 20px 0;
-  background-color: #cccccc;
+  background-color: #EBEAEA;
   text-align: left;
+  color: #5F5F5F;
 }
 
 .topic{
@@ -186,6 +150,7 @@ header .current a{
 /*work-preview*/
 #work-preview{
   margin:15px 0 150px 0;
+  color: #5F5F5F;
 }
 
 #work-preview p{
@@ -199,7 +164,6 @@ header .current a{
 
 .box{
   float: left;
-  color: #999;
   text-align: center;
   display: inline;
   margin:auto;
@@ -221,18 +185,18 @@ header .current a{
 
 #topic-preview-contact{
   margin:20px 0 20px 0;
-  background-color: #cccccc;
+  background-color: #EBEAEA;
   text-align: left;
 }
 
 .box_contact{
   float: right;
   display: inline;
-  color: #000;
   text-align: center;
   width: 16.3%;
   max-height: auto;
   margin-top: 180px;
+  color: #5F5F5F;
 }
 
 
@@ -240,6 +204,11 @@ header .current a{
   margin-top: 0px;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+#topic-preview-contact a{
+  text-decoration: none;
+  color: #5F5F5F;
 }
 
 #topic-preview-contact h3{
@@ -275,10 +244,11 @@ header .current a{
 
 /*-----------------------footer-----------------------------------------------*/
 footer{
+  font-family: 'Questrial', sans-serif;
   padding:20px;
   margin-top: 10px;
-  color: #ffffff;
-  background-color: #cccccc;
+  color: #cccccc;
+  background-color: #EBEAEA;
   text-align: center;
 }
 
@@ -304,7 +274,6 @@ footer{
   header #branding h1{
     margin: 0 auto;
     padding:0 20px 0px 20px;
-    color: #999999
   }
 
   header a{
@@ -331,12 +300,12 @@ footer{
 
   header .current a{
     font-weight:bold;
-    color:#999999;
   }
 
   /*topic-preview*/
   #topic-preview{
-    background-color: #ffffff;
+    background-color: #EBEAEA;
+    color: #5F5F5F;
   }
 
   .topic{
@@ -380,6 +349,7 @@ footer{
   /*work-preview*/
   #work-preview{
     margin:15px 0 80px 0;
+    color: #5F5F5F;
   }
 
   #work-preview p{
@@ -395,7 +365,6 @@ footer{
 
   .box{
     float: left;
-    color: #999;
     text-align: left;
     display: inline;
     margin:auto;
@@ -416,14 +385,14 @@ footer{
 
   #topic-preview-contact{
     margin:20px 0 20px 0;
-    background-color: #ffffff;
+    background-color: #EBEAEA;
     text-align: left;
+    color: #5F5F5F;
   }
 
   .box_contact{
     float: right;
     display: inline;
-    color: #000;
     text-align: center;
     width: 100%;
     max-height: auto;
@@ -468,6 +437,7 @@ footer{
     text-align: left;
     padding: 0px 45px 0px 55px;
     margin-top: 2px;
+
   }
 
   #topic-preview h1 {
@@ -517,7 +487,6 @@ footer{
 
   .box{
     float: left;
-    color: #999;
     text-align: center;
     display: inline;
     margin:auto;
@@ -541,7 +510,6 @@ footer{
   .box_contact{
     float: right;
     display: inline;
-    color: #000;
     text-align: center;
     width: 16.3%;
     max-height: auto;
@@ -640,7 +608,6 @@ footer{
 
   .box{
     float: left;
-    color: #999;
     text-align: center;
     display: inline;
     margin:auto;
@@ -664,7 +631,6 @@ footer{
   .box_contact{
     float: right;
     display: inline;
-    color: #000;
     text-align: center;
     width: 16.3%;
     max-height: auto;
@@ -764,7 +730,6 @@ footer{
 
   .box{
     float: left;
-    color: #999;
     text-align: center;
     display: inline;
     margin:auto;
@@ -788,7 +753,6 @@ footer{
   .box_contact{
     float: right;
     display: inline;
-    color: #000;
     text-align: center;
     width: 16.3%;
     max-height: auto;
@@ -888,7 +852,6 @@ footer{
 
   .box{
     float: left;
-    color: #999;
     text-align: center;
     display: inline;
     margin:auto;
@@ -912,7 +875,6 @@ footer{
   .box_contact{
     float: right;
     display: inline;
-    color: #000;
     text-align: center;
     width: 16.3%;
     max-height: auto;
@@ -1010,7 +972,6 @@ footer{
 
   .box{
     float: left;
-    color: #999;
     text-align: center;
     display: inline;
     margin:auto;
@@ -1034,7 +995,6 @@ footer{
   .box_contact{
     float: right;
     display: inline;
-    color: #000;
     text-align: center;
     width: 16.3%;
     max-height: auto;
