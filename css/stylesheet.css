@@ -2,25 +2,26 @@
   -Margin around whole webside
   -Wie kann ich Bildproportionen verändern, ohne es zu verzerren?
   -Bei responsive design zwischen den media queries für ein paar pixel auf grundlayout?
+  -text responisve
 
 *{
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
-
 ---*/
+
 /*Global*/
 *{
   box-sizing: border-box;
 }
 
-*html{
+html{
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
 }
 
-*body{
+body{
   padding: 0;
   margin: 0;
   height: 100%;
